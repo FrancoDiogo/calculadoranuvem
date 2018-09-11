@@ -14,8 +14,8 @@ public class CalculadoraRest {
 	CalculadoraSimplesDao dao = new CalculadoraSimplesDao();
 	
 	@GET
-	@Path("dividir/{param}/{param}")
-	public Response calcular(@PathParam("param") Double valor1, @PathParam("param") Double valor2) {
+	@Path("dividir/{param}/{param2}")
+	public Response calcular(@PathParam("param") Double valor1, @PathParam("param2") Double valor2) {
 		Double result = dao.dividir(valor1, valor2);
 		return Response.status(200).entity(result).build();
 	}
