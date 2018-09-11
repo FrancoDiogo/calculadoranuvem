@@ -17,6 +17,6 @@ public class CalculadoraRest {
 	@Path("dividir/{param}/{param2}")
 	public Response calcular(@PathParam("param") Integer valor1, @PathParam("param2") Integer valor2) {
 		Integer result = dao.dividir(valor1, valor2);
-		return Response.status(200).entity(result).build();
+		return Response.status(200).entity("Resultado: " + result).build();
 	}
 }
