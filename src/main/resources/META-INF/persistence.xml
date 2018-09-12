@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://java.sun.com/xml/ns/persistence
+http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="config-entidades">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>br.com.db1.model.Produto</class>
+		<properties>
+			<property name="hibernate.bytecode.use_reflection_optimizer"
+				value="false" />
+
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+			<property name="hibernate.connection.username" value="jowcuvevjqizus" />
+			<property name="hibernate.connection.password"
+				value="3bf86740ad022b9afb65df8d0343460babde6e7bc37ce84bdf70762a79fa31b2" />
+			<property name="hibernate.connection.url"
+				value="jdbc:postgresql://ec2-54-83-29-34.compute-1.amazonaws.com:5432/d7ork1tm9pscb6?username=
+jowcuvevjqizus&amp;password=3bf86740ad022b9afb65df8d0343460babde6e7bc37ce84bdf70762a79fa31b2&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
+
+			<property name="hibernate.archive.autodetection" value="class" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+
+		</properties>
+	</persistence-unit>
+</persistence>
