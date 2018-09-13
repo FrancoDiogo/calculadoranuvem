@@ -50,7 +50,22 @@ public class ProdutoRest {
 		}
 		
 		return Response.status(201).entity(result).build();
-
 	}
 
+	
+	@POST
+	@Path("/post")
+	@Consumes("application/json")
+	public Response listarProdutoJSON() {
+		ProdutoDao dao = new ProdutoDao();
+		List<Produto> produtos = dao.list();
+		String result = "";
+		
+		for(Produto produto: produtos){
+			result = result + " \n " + produto.toString() + "\r";
+		}
+		
+		return Response.status(201).entity(result).build();
+
+	}
 }
