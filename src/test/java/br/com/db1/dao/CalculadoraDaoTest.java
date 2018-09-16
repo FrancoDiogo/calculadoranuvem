@@ -33,4 +33,10 @@ public class CalculadoraDaoTest {
 		assertTrue(3d == dao.subtrair(13d,10d));
 		assertFalse(2.99 == dao.subtrair(13d,10d));
 	}
+	
+	@Test
+	public void raizTest() {
+		assertTrue(10d == dao.raiz(100d));
+		assertFalse(10.01 == dao.raiz(100d));
+	}
 }

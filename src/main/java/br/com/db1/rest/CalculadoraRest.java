@@ -39,5 +39,11 @@ public class CalculadoraRest {
 		Double result = dao.subtrair(valor1, valor2);
 		return Response.status(200).entity("Resultado Calculadora Power: " + result).build();
 	}
-
+	
+	@GET
+	@Path("raiz/{param}")
+	public Response raiz(@PathParam("param") Double valor) {
+		Double result = dao.raiz(valor);
+		return Response.status(200).entity("Resultado Calculadora Power: " + result).build();
+	}
 }

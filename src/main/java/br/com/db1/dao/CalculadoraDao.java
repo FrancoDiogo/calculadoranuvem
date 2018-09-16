@@ -17,4 +17,8 @@ public class CalculadoraDao {
 	public Double subtrair(Double valor1, Double valor2) {
 		return valor1 - valor2;
 	}
+
+	public Double raiz(Double valor) {
+		return Math.sqrt(valor);
+	}
 }

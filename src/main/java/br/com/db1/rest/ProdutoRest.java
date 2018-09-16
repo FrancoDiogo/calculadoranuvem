@@ -66,6 +66,5 @@ public class ProdutoRest {
 		}
 		
 		return Response.status(201).entity(result).build();
-
 	}
 }
